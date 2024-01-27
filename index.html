@@ -1,0 +1,119 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+ body {
+		background-image : url("gambar13/bc.jpg")
+		
+	}
+</style>
+<body>
+<div class="w3-container w3-black ">
+ <center><img src = "Gambar13/banner1.png" class = "w3-image" style="width:50%  ">
+</div>
+<div class="w3-bar w3-blue">
+ <button class="w3-bar-item w3-btn" onclick="openLaman('C++')">C++</button>
+ <button class="w3-bar-item w3-btn" onclick="openLaman('PHP')">PHP</button>
+ <button class="w3-bar-item w3-btn" onclick="openLaman('Python')">Python</button>
+ <button class="w3-bar-item w3-btn" onclick="openLaman('Javascript')">Javascript</button>
+ <div class="w3-dropdown-hover">
+	<button class="w3-btn">Bahasa Lainnya</button>
+	<div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<button class="w3-bar-item w3-btn" onclick="openLaman('C#')">C#</button>
+		<button class="w3-bar-item w3-btn" onclick="openLaman('SQL')">SQL</button>
+		<button class="w3-bar-item w3-btn" onclick="openLaman('GO')">GO/Golang</button>
+	</div>
+ </div>
+  
+	<button class="w3-bar-item w3-btn w3-ripple w3-right" style="padding-right : 25px" onclick="openLaman('About')">About Me</button>
+
+</div>
+<div id="C++" class="w3-container laman w3-animate-zoom " style="display:none">
+ <font color=white>
+ <h2>C++</h2>
+ <img src = "Gambar13/CC.png" style=width:50%>
+ 
+ <p>Bahasa pemrograman C++ adalah bahasa yang bisa digunakan untuk membuat berbagai aplikasi. 
+	Misalnya, aplikasi pengolah gambar, software gadget, game, hingga sistem operasi baru. Bahasa ini dikembangkan dari bahasa pemrograman C. </p>
+	<p>
+	Tak heran kalau dua bahasa ini memiliki sintaks dan struktur kode yang sama. 
+	Bedanya, C++ merupakan Object Oriented Programming (OOP) sedangkan C merupakan bahasa pemrograman prosedural. 
+	Artinya, bahasa pemrograman C++ memiliki data dan function yang disatukan dalam kelas dan objek untuk bekerjasama memecahkan sebuah masalah. 
+	Jadi ketika Anda ingin mengubah fungsi, tidak perlu mengubah keseluruhan program. </p><p>Dengan begitu, pengubahan kode akan lebih fleksibel. 
+	Hal ini tidak bisa dilakukan dalam bahasa pemrograman C yang bersifat prosedural, di mana data dan function terpisah dan harus dibaca satu persatu oleh compiler. 
+	Sehingga ketika Anda ingin mengubah fungsi, Anda perlu mengubah keseluruhan program. Sejak awal dirancang pada tahun 1983, bahasa pemrograman C++  
+	terus berkembang hingga di versi terbaru C++17 yang dirilis pada tahun 2017. Meskipun ada beberapa versi, 
+	konsep dasarnya sama sehingga Anda tak perlu bingung manakah yang akan digunakan. </p>
+</div>
+<div id="PHP" class="w3-container laman w3-animate-zoom w3-animate-left " style="display:none">
+ <h2>PHP</h2>
+ <img src = "Gambar13/php.png" style=width:50%>
+ <p>PHP  (PHP: Hypertext Preprocessor) adalah sebuah bahasa pemrograman server side scripting yang bersifat open source.
+	Sebagai sebuah scripting language, PHP menjalankan instruksi pemrograman saat proses runtime. Hasil dari instruksi tentu akan berbeda tergantung data yang diproses.
+	PHP merupakan bahasa pemrograman server-side, maka script dari PHP nantinya akan diproses di server. Jenis server yang sering digunakan bersama dengan PHP antara lain Apache, Nginx, dan LiteSpeed. </p>
+</div>
+<div id="Python" class="w3-container laman w3-animate-zoom " style="display:none">
+ <h2>Python</h2>
+ <img src = "Gambar13/python.png" style=width:50%>
+ <p>Python adalah bahasa pemrograman serbaguna yang bisa dijalankan pada hampir semua arsitektur sistem, 
+	mulai dari web development hingga machine learning dan bisa digunakan untuk aplikasi di berbagai bidang.
+	Selain keserbagunaannya, Python juga merupakan bahasa pemrograman yang cukup mudah dipelajari oleh para 
+	pemula sehingga menjadi salah satu bahasa pemrograman yang paling populer.</p>
+	<p>Nama Python sendiri berasal dari Monty Python. Ketika Guido van Rossum membuatnya, dia juga sedang membaca skrip Sirkus Terbang Monty Python BBC. 
+		Menurutnya nama itu singkat dan sedikit misterius. Karena itulah, sang kreator memilih menggunakan nama tersebut untuk bahasa pemrograman yang dibuatnya itu.</p>
+</div>
+<div id="Javascript" class="w3-container laman w3-animate-zoom " style="display:none">
+ <h2>Javascript</h2>
+ <img src = "Gambar13/javascript.png" style=width:50%>
+ <p>JavaScript adalah skrip pemrograman ringan yang umumnya digunakan oleh web developer 
+	untuk menciptakan interaksi yang lebih dinamis saat membuat halaman web. 
+	Web developer biasanya menggunakan JavaScript bersama HTML dan CSS karena ketiganya bisa bekerja sama tanpa masalah. JavaScript adalah skrip pemrogramannya, 
+	HTML berfungsi untuk menyusun struktur website, dan CSS untuk mendesain serta mengatur layout halaman website.</p>
+</div>
+<div id="C#" class="w3-container laman w3-animate-zoom " style="display:none">
+ <h2>C#</h2>
+ <img src = "Gambar13/CC2.png" style=width:50%>
+ <p>C# adalah bahasa pemograman berbasis objek, yaitu model yang mengatur desain software menurut objek.
+	C# adalah salah satu bahasa pemrograman terbaik karena performanya cepat dan lebih stabil. 
+	Bahasa coding ini juga lebih mudah daripada pendahulunya, C dan C++, karena memiliki sintaksis yang simpel dan hierarki class yang tersusun dengan baik.
+	Awalnya, C# digunakan sebagai bahasa Microsoft untuk .NET framework, kemudian kini kompatibel dengan Windows dan Linux. 
+	Bisa dibilang, ini adalah bahasa pemrograman terbaik yang layak dipelajari untuk mengembangkan aplikasi desktop berbasis GUI.
+	Programmer juga bisa menggunakan C# di berbagai environment, termasuk software perangkat seluler dan enterprise. 
+	Dengan kata lain, mereka bisa membuat aplikasi Android dan iOS serta mengembangkan game 2D dan 3D di Unity.</p>
+</div>
+<div id="SQL" class="w3-container  laman w3-animate-zoom " style="display:none">
+ <h2>SQL</h2>
+ <img src = "Gambar13/Sql.png" style=width:50%>
+ <p>Structured Query Language (SQL) adalah bahasa pemrograman yang paling cocok dipelajari kalau Anda tertarik dengan data science dan komputasi statistik. 
+	SQL merupakan bahasa khusus domain,memungkinkan programmer membuat kueri, memanipulasi, dan menganalisis data yang disimpan dalam database relasional.</p>
+</div>
+<div id="GO" class="w3-container laman w3-animate-zoom " style="display:none">
+ <h2>GO/Golang</h2>
+ <img src = "Gambar13/go.png" style=width:50%>
+ <p>Go atau Golang dibuat untuk mengembangkan API, aplikasi desktop berbasis GUI, dan aplikasi web. Meskipun tergolong masih baru, Go menjadi salah satu 
+	bahasa pemrograman yang berkembang paling cepat.Pemrograman konkuren adalah salah satu fitur terbaik Go. 
+	Fitur ini memungkinkan programmer menggunakan CPU multicore dan codebase yang sangat besar.
+	Ditambah dengan performa yang luar biasa, Go bisa menjadi bahasa coding yang sangat cocok untuk membuat algoritme, web server, dan pipeline data.</p>
+</div>
+<div id="About" class="w3-container laman w3-animate-zoom " style="display:none">
+  <center>
+  <img src= "Gambar13/gambarsaya.jpeg" style=height:50%>
+  <h3> Nama : Ardi Saputra
+  <h3> NIM : 10123195
+  <h3> Kelas : IF-5
+  
+ 
+</div>
+<script>
+function openLaman(namaLaman) {
+ var i;
+ var x = document.getElementsByClassName("laman");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namaLaman).style.display = "block"; 
+}
+</script>
+</body>
+</html>
